@@ -18,7 +18,7 @@ customer_id varchar(20) not null,
 quantity numeric,
 total_amount numeric,
 constraint fk_product foreign key(product_id) references products(product_id),
-constraint fk_customer foreign key(customer_id) references products(product_id)
+constraint fk_customer foreign key(customer_id) references products(customer_id)
 );
 
 alter table products add category varchar(20);
